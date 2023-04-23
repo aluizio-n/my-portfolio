@@ -12,22 +12,22 @@ function Menu() {
         </div>
         <ul className="menu-list">
           <li>
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="/technologies">Technologies</a>
+            <a href="#technologies">Technologies</a>
           </li>
           <li>
-            <a href="/sumary">Sumary</a>
+            <a href="#sumary">Sumary</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -40,8 +40,6 @@ export default Menu;
 const StyledMenu = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
   font-family: Inter;
-  font-weight: 700;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,21 +47,27 @@ const StyledMenu = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60rem;
+    width: 69.7rem;
+    padding-top: 3rem;
     color: #212529;
-    ul {
+    position: fixed;
+    
+    background-color: #fff;
+
+     ul {
       display: flex;
       flex-direction: row;
       gap: 1.5rem;
       list-style-type: none;
     }
     a {
-      font-family: Inter;
-      font-weight: 700;
+      font-size: 1rem;
       text-decoration: none;
       color: #212529;
-      transition: 0.2s;
+      transition: .5s;
+      margin: auto;
     }
+     
     a:hover {
       color: #868e96;
     }

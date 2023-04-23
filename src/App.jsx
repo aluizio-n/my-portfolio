@@ -16,6 +16,7 @@ function App() {
 export default App;
 
 const StyledApp = styled.div`
+
   .App {
     display: flex;
     flex-direction: column;
