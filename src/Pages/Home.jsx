@@ -39,11 +39,6 @@ function Home() {
           </div>
         </main>
       </section>
-      <section id="about" className="about-section">About</section>
-      <section id="portfolio" className="portfolio-section">Portfolio</section>
-      <section id="technologies" className="technologies-section">Technologies</section>
-      <section id="sumary" className="sumary-section">Sumary</section>
-      <section id="contact" className="contact-section">Contact</section>
     </StyledHome>
   );
 }
@@ -51,8 +46,6 @@ function Home() {
 export default Home;
 
 const StyledHome = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-  font-family: Inter, sans-serif;
 
   .home-section{
     min-height: 100vh;
@@ -61,29 +54,13 @@ const StyledHome = styled.div`
     align-items: center;
   }
 
-  .about-section,
-  .portfolio-section,
-  .technologies-section,
-  .sumary-section,
-  .contact-section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 9rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #212529;
-
-  }
-
   .content-main {
     display: flex;
     flex-direction: row;
     font-size: 1.5rem;
-    line-height: 0.1rem;
-    gap: 10rem;
+    line-height: 3rem;
     margin-top: 6rem;
+    padding-left: 3.4rem;
   }
 
   .greetings {
@@ -97,7 +74,7 @@ const StyledHome = styled.div`
   }
 
   .main-image {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     width: 36rem;
   }
   .button-more-about {
